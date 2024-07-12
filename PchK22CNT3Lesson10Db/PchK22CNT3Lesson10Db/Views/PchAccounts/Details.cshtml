@@ -1,0 +1,67 @@
+﻿@model PchK22CNT3Lesson10Db.Models.PchAccount
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_PchLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PchAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PchUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PchUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PchPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PchPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PchFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PchFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PchEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PchEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PchPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PchPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PchActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PchActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PchID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

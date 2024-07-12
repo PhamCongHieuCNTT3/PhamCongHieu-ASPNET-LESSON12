@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PchK22CNT3Lesson10DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PchAccount">
+    <Key>
+      <PropertyRef Name="PchID" />
+    </Key>
+    <Property Name="PchUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PchPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="PchFullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="PchEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="PchPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="PchActive" Type="bit" />
+    <Property Name="PchID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PchK22CNT3Lesson10DbModelStoreContainer">
+    <EntitySet Name="PchAccount" EntityType="Self.PchAccount" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
